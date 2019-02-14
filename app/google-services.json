@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1022508436119",
+    "firebase_url": "https://anglothermolitor.firebaseio.com",
+    "project_id": "anglothermolitor",
+    "storage_bucket": "anglothermolitor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022508436119:android:702d4f1ec764a503",
+        "android_client_info": {
+          "package_name": "com.example.thermonitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1022508436119-5u0vtrq7f4lj30lv9tlqukafittl7qvn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhW7sqbvvXC1UL9AUFHPnqYwEkMM2EA-E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
