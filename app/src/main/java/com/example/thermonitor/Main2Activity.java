@@ -9,10 +9,12 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 public class Main2Activity extends AppCompatActivity {
 ListView listView;
+
 ArrayAdapter<String>adapter;
 int [] Images ={R.drawable.chandler,R.drawable.joey,R.drawable.ross,R.drawable.phoebe,R.drawable.monica,R.drawable.rach};
 String [] android_version={ "joey","chandler","monica","ross","rachel","phoebe"};
@@ -20,6 +22,7 @@ String [] android_version={ "joey","chandler","monica","ross","rachel","phoebe"}
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+ //       scanwifi=(Button)findViewById(R.id.button4);
         listView=(ListView)findViewById(R.id.list_view);
         adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android_version);
         listView.setAdapter(adapter);
@@ -31,6 +34,8 @@ String [] android_version={ "joey","chandler","monica","ross","rachel","phoebe"}
             }
         });
     }
+
+
 }
 class customAdadpter extends BaseAdapter{
 

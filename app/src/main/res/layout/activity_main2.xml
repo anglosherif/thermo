@@ -131,4 +131,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.38"
         app:srcCompat="@drawable/joey" />
+
 </android.support.constraint.ConstraintLayout>

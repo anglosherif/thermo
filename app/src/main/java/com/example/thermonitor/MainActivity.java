@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         auth=FirebaseAuth.getInstance();
         if (auth.getCurrentUser() !=null){
             finish();
-            Intent p=new Intent(MainActivity.this,Main2Activity.class);
+            Intent p=new Intent(MainActivity.this,wifidetect.class);
             startActivity(p);
         }
         TextEmail =(EditText) findViewById(R.id.editText11);
@@ -62,7 +62,7 @@ auth.signInWithEmailAndPassword(email,password).addOnCompleteListener(this, new 
       progressDialog.dismiss();
       if (task.isSuccessful()){
           finish();
-          Intent o=new Intent(MainActivity.this,Main2Activity.class);
+          Intent o=new Intent(MainActivity.this,wifidetect.class);
           startActivity(o);      }
     }
 });

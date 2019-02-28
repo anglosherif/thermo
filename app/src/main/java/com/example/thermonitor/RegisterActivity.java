@@ -69,7 +69,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                  //   Log.w(mail, "signInWithEmail:failed", task.getException());
                     progressDialog.hide();
                     Toast.makeText(RegisterActivity.this, "User Authentication: ",Toast.LENGTH_LONG).show();
-                    startActivity(new Intent(RegisterActivity.this,Main2Activity.class));
+                    startActivity(new Intent(RegisterActivity.this,wifidetect.class));
 
                 }
                 else
@@ -84,10 +84,10 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             UserReg();
         }
         if(v==loginn){
-            finish();
+           // finish();
 
-            Intent j=new Intent(this,MainActivity.class);
-            startActivity(j); ;// finish();  //Intent i=new Intent(RegisterActivity.this,MainActivity.class);
+           startActivity (new Intent(RegisterActivity.this,MainActivity.class));
+             // finish();Intent i=new Intent(RegisterActivity.this,MainActivity.class);
         }
 
     }
