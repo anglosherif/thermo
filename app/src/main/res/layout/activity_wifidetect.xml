@@ -8,8 +8,8 @@
 
 
     <ListView
-        android:id="@+id/wifidetect"
-        android:layout_width="300dp"
+        android:id="@+id/wifiList"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"></ListView>
 
 
