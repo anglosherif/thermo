@@ -8,7 +8,7 @@
 
     <EditText
         android:id="@+id/editText11"
-        android:layout_width="395dp"
+        android:layout_width="363dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
@@ -26,7 +26,7 @@
 
     <EditText
         android:id="@+id/editText12"
-        android:layout_width="395dp"
+        android:layout_width="364dp"
         android:layout_height="47dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
@@ -144,7 +144,9 @@
         android:text="Sign Up here"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>

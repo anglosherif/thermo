@@ -28,7 +28,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     private Button Signup;
     private EditText EmailReg;
     private EditText passwordReg;
-    private EditText UserReg;
+    //private EditText UserReg;
     private TextView loginn;
     private ProgressDialog progressDialog;
     private FirebaseAuth firebaseAuth;
@@ -40,7 +40,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         EmailReg=(EditText)findViewById(R.id.editText3);
         loginn=(TextView)findViewById(R.id.textView17);
         passwordReg=(EditText)findViewById(R.id.editText2);
-        UserReg=(EditText)findViewById(R.id.editText);
+      //  UserReg=(EditText)findViewById(R.id.editText);
         Signup.setOnClickListener(this);
         progressDialog=new ProgressDialog(this);
         firebaseAuth=FirebaseAuth.getInstance();
@@ -48,16 +48,13 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     private void UserReg(){
         final String mail=EmailReg.getText().toString().trim();
         String pass=passwordReg.getText().toString().trim();
-        String user=UserReg.getText().toString().trim();
+      //  String user=UserReg.getText().toString().trim();
 
         if (TextUtils.isEmpty(mail)){
             Toast.makeText(this,"please enter Email",Toast.LENGTH_SHORT).show();
             return;
         } if (TextUtils.isEmpty(pass)){
             Toast.makeText(this,"please enter password",Toast.LENGTH_SHORT).show();
-            return;}
-        if (TextUtils.isEmpty(user)){
-            Toast.makeText(this,"please enter user name",Toast.LENGTH_SHORT).show();
             return;}
 
         progressDialog.setMessage("regestering...");
