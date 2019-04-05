@@ -36,7 +36,7 @@ private FirebaseAuth firebaseAuth;
         readingView=(TextView)findViewById(R.id.textView5);
         Warning=(TextView)findViewById(R.id.textView7);
 Firebase.setAndroidContext(getApplicationContext());
-myfirebase=new Firebase("https://anglothermolitor.firebaseio.com/"+wifidetect.ssid);
+myfirebase=new Firebase("https://anglothermolitor.firebaseio.com/"+wifidetect.macAdressnew2);
 firebaseAuth= FirebaseAuth.getInstance();
 if (firebaseAuth.getCurrentUser()==null){
     finish();

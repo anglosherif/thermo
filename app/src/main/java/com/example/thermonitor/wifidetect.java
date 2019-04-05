@@ -33,6 +33,7 @@ static  String ssid;
     private int size=0;
     private boolean still=true;
     static String x;
+    static char y;
     List<ScanResult> results;
      ArrayList<String> arrayList =new ArrayList<>();
     private ArrayAdapter adapter;
@@ -82,7 +83,11 @@ static  String ssid;
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     macAdress=MAC.get(position);
-                    macAdressnew=macAdress.substring(0,1)+'4'+macAdress.substring(2);
+                  y=macAdress.charAt(1);
+                  int z=(int)(y);
+                  int b=z-2;
+                  char f=(char)b;
+                    macAdressnew=macAdress.substring(0,1)+f+macAdress.substring(2);
                 macAdressnew2=macAdressnew.toUpperCase();
                 ssid=arrayList.get(position);
                 //   Toast.makeText(wifidetect.this,macAdressnew2,Toast.LENGTH_SHORT).show();
