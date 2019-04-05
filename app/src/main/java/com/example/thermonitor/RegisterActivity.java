@@ -29,7 +29,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     private EditText EmailReg;
     private EditText passwordReg;
     //private EditText UserReg;
-    private TextView loginn;
     private ProgressDialog progressDialog;
     private FirebaseAuth firebaseAuth;
     @Override
@@ -38,7 +37,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         setContentView(R.layout.activity_register);
         Signup=(Button)findViewById(R.id.button2);
         EmailReg=(EditText)findViewById(R.id.editText3);
-        loginn=(TextView)findViewById(R.id.textView17);
         passwordReg=(EditText)findViewById(R.id.editText2);
       //  UserReg=(EditText)findViewById(R.id.editText);
         Signup.setOnClickListener(this);
@@ -80,12 +78,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         if (v==Signup){
             UserReg();
         }
-        if(v==loginn){
-           // finish();
 
-           startActivity (new Intent(RegisterActivity.this,MainActivity.class));
-             // finish();Intent i=new Intent(RegisterActivity.this,MainActivity.class);
-        }
 
     }
 }
